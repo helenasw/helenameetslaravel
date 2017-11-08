@@ -26,7 +26,7 @@ class Answer extends Model {
                     'answer-sleep-time-less-4',
                     'answer-sleep-time-4-to-6',
                     'answer-sleep-time-6-to-8',
-                    'answer-sleep-time-8-plus'
+                    'answer-sleep-time-8-plus',
                 ];
             case Question::TYPE_SLEEP_QUALITY:
                 return [
