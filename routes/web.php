@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('daily-qs', function () {
     return view('daily-qs');
 });
+
+Route::post('daily-qs', 'DailyQsController@store');

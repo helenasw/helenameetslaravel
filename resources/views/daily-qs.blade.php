@@ -3,9 +3,10 @@
         Hey (user?) -- quick question for you
     </h1>
 
-    <form>
+    <form method="post" action="/daily-qs">
         <h3>How did you sleep last night?</h3>
         <div class="form-group">
+            {{ csrf_field() }}
             <label for="sleepTime">I slept for...</label>
             <select class="form-control" id="sleepTime">
                 <option selected disabled hidden>----</option>
