@@ -19,4 +19,6 @@ Route::get('daily-qs', function () {
     return view('daily-qs');
 });
 
-Route::post('daily-qs', 'DailyQsController@store');
+Route::post('daily-qs', 'AnswersController@storeMany');
+
+Route::post('show-answers', 'AnswersController@index');

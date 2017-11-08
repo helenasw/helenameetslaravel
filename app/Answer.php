@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Answer extends Model {
 
+    // Allow these fields to be filled en masse
+    protected $fillable = ['answer','question_type'];
+
     /**
      * In a real application, this relationship (and predefined answers)
      * should be stored in the database.
