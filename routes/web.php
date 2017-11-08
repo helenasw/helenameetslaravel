@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('daily-qs', function () {
+    return view('daily-qs');
+});
