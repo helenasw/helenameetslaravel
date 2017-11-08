@@ -14,7 +14,7 @@ class Answer extends Model {
 
     /**
      * In a real application, this relationship (and predefined answers)
-     * should be stored in the database.
+     * should be stored in the database. Just writing this out for brevity.
      *
      * @param string $question_type
      * @return string[]
