@@ -1,8 +1,6 @@
 <?php
 
-Route::get('daily-qs', function () {
-    return view('daily-qs');
-});
+Route::get('daily-qs', 'DailyQsController@index');
 
 Auth::routes();
 
