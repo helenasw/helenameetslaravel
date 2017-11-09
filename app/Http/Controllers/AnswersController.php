@@ -21,6 +21,7 @@ class AnswersController extends Controller {
      */
     public function storeMany() {
         $answers = [];
+
         foreach (Question::getQuestionTypes() as $question_type) {
             $answer = request($question_type, null);
 
@@ -28,7 +29,7 @@ class AnswersController extends Controller {
                 $answers[$question_type] = Answer::create([
                     'answer' => $answer,
                     'question_type' => $question_type,
-                    'user' => Auth::id(),
+                    'user_id' => Auth::id(),
                 ]);
             }
         }

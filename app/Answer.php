@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Answer extends Model {
 
     // Allow these fields to be filled en masse
-    protected $fillable = ['answer','question_type'];
+    protected $fillable = ['answer','question_type', 'user_id'];
 
     /**
      * In a real application, this relationship (and predefined answers)
