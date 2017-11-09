@@ -22,3 +22,6 @@ Route::get('daily-qs', function () {
 Route::post('daily-qs', 'AnswersController@storeMany');
 
 Route::post('show-answers', 'AnswersController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
