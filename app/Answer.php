@@ -48,4 +48,44 @@ class Answer extends Model {
                 return [];
         }
     }
+
+    /**
+     * In reality, this would be stored as part of defined answers.
+     *
+     * @return string The human friendly version of $this->answer
+     */
+    public function formattedAnswer(): string {
+        switch ($this->answer) {
+            case 'answer-sleep-time-less-4':
+                return 'less than 4 hours';
+            case 'answer-sleep-time-4-to-6':
+                return 'between 4 and 6 hours';
+            case 'answer-sleep-time-6-to-8':
+                return 'between 6 and 8 hours';
+            case 'answer-sleep-time-8-plus':
+                return 'more than 8 hours';
+            case 'answer-sleep-quality-excellent':
+                return 'excellent';
+            case 'answer-sleep-quality-good':
+                return 'good';
+            case 'answer-sleep-quality-fine':
+                return 'fine';
+            case 'answer-sleep-quality-bad':
+                return 'bad';
+            case 'answer-sleep-quality-terrible':
+                return 'terrible';
+            case 'answer-difficulty-waking-up-very-easy':
+                return 'very easy';
+            case 'answer-difficulty-waking-up-easy':
+                return 'easy';
+            case 'answer-difficulty-waking-up-fine':
+                return 'fine';
+            case 'answer-difficulty-waking-up-difficult':
+                return 'difficult';
+            case 'answer-difficulty-waking-up-very-difficult':
+                return 'very difficult';
+            default:
+                return '';
+        }
+    }
 }
