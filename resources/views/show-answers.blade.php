@@ -8,15 +8,21 @@
             </div>
 
             <div class="panel-body">
-                <p>
-                    You slept {{ $question_type_sleep_time->formattedAnswer() }}.
-                </p>
-                <p>
-                    You said that your sleep quality was {{ $question_type_sleep_quality->formattedAnswer() }}.
-                </p>
-                <p>
-                    You said that waking up was {{ $question_type_difficulty_waking_up->formattedAnswer() }}.
-                </p>
+                @if ($question_type_sleep_time)
+                    <p>
+                        You slept <u>{{ $question_type_sleep_time->formattedAnswer() }}</u>.
+                    </p>
+                @endif
+                @if ($question_type_sleep_quality)
+                    <p>
+                        You said that your sleep quality was <u>{{ $question_type_sleep_quality->formattedAnswer() }}</u>.
+                    </p>
+                @endif
+                @if ($question_type_difficulty_waking_up)
+                    <p>
+                        You said that waking up was <u>{{ $question_type_difficulty_waking_up->formattedAnswer() }}</u>.
+                    </p>
+                @endif
             </div>
         </div>
     </div>
