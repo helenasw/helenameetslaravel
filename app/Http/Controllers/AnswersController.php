@@ -13,6 +13,12 @@ class AnswersController extends Controller {
         $this->middleware('auth');
     }
 
+    /**
+     * When a user submits their "daily-qs", store their answers, then
+     * redirect to a page which will show their answers.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function storeMany() {
         $answers = [];
         foreach (Question::getQuestionTypes() as $question_type) {
