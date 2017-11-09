@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 @section('content')
     <h1 class="text-center">
         Hey (user?) -- quick question for you
@@ -44,5 +46,3 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 @endsection
-
-@extends('partials/layout')

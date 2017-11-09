@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 @section('content')
     <h1 class="text-center">
         Hey (user?) -- quick question for you
@@ -16,5 +18,3 @@
         You said that waking up was {{ $question_type_difficulty_waking_up->answer }}.
     </div>
 @endsection
-
-@extends('partials/layout')
