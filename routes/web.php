@@ -1,11 +1,12 @@
 <?php
 
-Route::get('daily-qs', 'DailyQsController@index');
-
 Auth::routes();
 
+/** View the home page. Requires login. */
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::post('daily-qs', 'AnswersController@storeMany');
+/** View the daily survey. Requires login. */
+Route::get('survey', 'SurveyController@index');
 
-Route::post('show-answers', 'AnswersController@index');
+/** Submit the survey and store the results. Requires login. */
+Route::post('survey', 'AnswersController@storeMany');

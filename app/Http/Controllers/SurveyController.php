@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DailyQsController extends Controller {
+class SurveyController extends Controller {
 
     public function __construct() {
         $this->middleware('auth');
     }
 
     public function index() {
-        return view('daily-qs');
+        return view('survey');
     }
 }
