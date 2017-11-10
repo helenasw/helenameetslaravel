@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="panel-body">
-                    <form method="post" action="/daily-qs">
+                    <form method="post" action="/survey">
                         <div class="form-group">
                             {{ csrf_field() }}
                             <label for="sleepTime">I slept for...</label>

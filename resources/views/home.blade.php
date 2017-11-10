@@ -15,7 +15,7 @@
                     @endif
 
                     Hey, {{ $user_name }}. Have you filled out your daily q's yet?
-                    <a href="/daily-qs" class="btn btn-default">Not yet</a>
+                    <a href="/survey" class="btn btn-default">Not yet</a>
                 </div>
             </div>
         </div>
