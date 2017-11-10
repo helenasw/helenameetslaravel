@@ -9,12 +9,13 @@ use Illuminate\Support\Facades\Auth;
 
 class AnswersController extends Controller {
 
+    /** Require login */
     public function __construct() {
         $this->middleware('auth');
     }
 
     /**
-     * When a user submits their "daily-qs", store their answers, then
+     * When a user submits their survey, store their answers, then
      * redirect to a page which will show their answers.
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

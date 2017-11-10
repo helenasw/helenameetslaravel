@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Hey, {{ $user_name }}. Have you filled out your daily q's yet?
+                    Hey, {{ $user_name }}. Have you filled out your daily survey yet?
                     <a href="/survey" class="btn btn-default">Not yet</a>
                 </div>
             </div>
