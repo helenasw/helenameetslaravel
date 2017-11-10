@@ -55,6 +55,11 @@ By default, your Heroku app will be set up to deploy when you do `git push herok
 
 Once you have your app on Heroku, you'll need to set up the database. I followed this [guide](http://selimsalihovic.github.io/2016-02-07-using-mysql-on-heroku/).
 
+### That's not my name
+You might notice that your app says "Laravel" all over the place (page title for example). You can change this!
+* Locally: In your `.env` file, update the `APP_NAME` entry.
+* Heroku: do `heroku run config:set APP_NAME=YOUR_NAME_HERE` in your terminal
+
 ## Thoughts on Laravel
 Laravel provides a lot of nice things out of the box (login, a nice testing framework, etc). I'm still a little confused about where helpers and business logic should go (how would I organize this if it did anything remotely useful?), and I'm not sure if it's breaking PHPStorm's static analysis, or if I'm just doing something wrong. Either way, I got the impression that Laravel was designed by someone that doesn't already benefit from IDE code generation.
 
