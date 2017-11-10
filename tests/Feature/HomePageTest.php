@@ -19,6 +19,6 @@ class HomePageTest extends TestCase {
         $response = $this->actingAs($user)->get('/');
 
         $response->assertSuccessful();
-        $response->assertSee('href="/survey"');
+        $response->assertViewIs('home');
     }
 }
