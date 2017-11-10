@@ -8,17 +8,17 @@
             </div>
 
             <div class="panel-body">
-                @if ($question_type_sleep_time)
+                @if (isset($question_type_sleep_time))
                     <p>
                         You slept <u>{{ $question_type_sleep_time->formattedAnswer() }}</u>.
                     </p>
                 @endif
-                @if ($question_type_sleep_quality)
+                @if (isset($question_type_sleep_quality))
                     <p>
                         You said that your sleep quality was <u>{{ $question_type_sleep_quality->formattedAnswer() }}</u>.
                     </p>
                 @endif
-                @if ($question_type_difficulty_waking_up)
+                @if (isset($question_type_difficulty_waking_up))
                     <p>
                         You said that waking up was <u>{{ $question_type_difficulty_waking_up->formattedAnswer() }}</u>.
                     </p>
