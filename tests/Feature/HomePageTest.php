@@ -11,15 +11,6 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
  */
 class HomePageTest extends TestCase {
     /**
-     * A logged out request should be redirected to login.
-     */
-    public function testLoggedOutGetRequest() {
-        $response = $this->get('/');
-
-        $response->assertRedirect('/login');
-    }
-
-    /**
      * A logged in request should not be redirected and
      * should see the dashboard.
      */
