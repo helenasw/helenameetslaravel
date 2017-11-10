@@ -7,6 +7,8 @@ There are a couple of extremely basic tests to go along with this.
 
 You can see this running [here](http://helena-meets-laravel.herokuapp.com/).
 
+This was completed as a homework assignment for a job interview.
+
 ## Set up
 Do you want to meet Laravel and deploy it to Heroku too? Welcome aboard!
 
